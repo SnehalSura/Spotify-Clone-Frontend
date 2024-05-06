@@ -1,0 +1,1 @@
+A front-end replica of Spotify's music player interface, crafted using HTML and CSS. This project is focused on recreating the visual and interactive elements of Spotify's web player, providing a hands-on learning experience in front-end development.
