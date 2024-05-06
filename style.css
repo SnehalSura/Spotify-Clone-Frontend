@@ -1,0 +1,783 @@
+* {
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Proxima Nova", "Avenir", "Helvetica Neue", sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 8px 0;
+    background-color: #000;
+}
+
+.sidebar a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.sidebar {
+    background-color: #000;
+    margin-right: 1px;
+    width: 365px;
+    /* border-radius: 0.6rem; */
+}
+
+.sidebar .heading {
+    background-color: #121212;
+    display: flex;
+    align-items: end;
+    height: 44px;
+    width: 352px;
+    margin: 0 6px;
+    font-weight: 700;
+    padding: 0 1.5rem;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 112px;
+    width: 352px;
+    padding: 0.5rem 0.75rem !important;
+    margin: 0 6px 8px 6px !important;
+}
+
+.nav-option {
+    background-color: inherit;
+    line-height: 2.5rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+}
+
+
+.nav .nav-search {
+    color: #B3B3B3;
+    opacity: 0.7;
+    transition: opacity 0.2s linear;
+}
+
+.sidebar .nav-search:hover {
+    opacity: 1;
+}
+
+
+.nav-option i {
+    font-size: 1.25rem;
+    margin-left: 0.3rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+/* Styling the scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121212;
+    /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color of the scrollbar thumb */
+}
+
+.library {
+    background-color: #121212;
+    /* Not fixed color */
+    height: 100px;
+    width: 352px;
+    margin: 6px;
+    margin-bottom: 0;
+    /* overflow: auto; */
+    border-radius: 0.6rem 0.6rem 0 0;
+    /* box-shadow: -3px 0 10px red; */
+}
+
+.lib-btn {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.lib-btn button {
+    margin-left: 1rem;
+}
+
+.library-option {
+    background-color: #121212;
+    padding: 0.25rem 0.75rem;
+}
+
+.library span {
+    background-color: #121212;
+}
+
+.library span button {
+    outline: none;
+    background-color: inherit;
+}
+
+.library span button:hover {
+    background-color: rgba(72, 70, 70, 0.3);
+    border-radius: 50%;
+}
+
+.library span button:hover>i {
+    background-color: rgba(72, 70, 70, 0.1);
+}
+
+.library span button i {
+    font-size: 1.1rem;
+    background-color: #121212;
+    padding-top: 0.375rem;
+}
+
+.inherit_bg {
+    background-color: #121212 !important;
+}
+
+.first-box {
+    background-color: inherit !important;
+    height: 56px;
+    padding: 0.5rem 1rem;
+    margin-top: 0;
+    color: #A7A7A7;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-box span button {
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+    opacity: 0.7;
+    border: none;
+}
+
+.library-option {
+    display: flex;
+    opacity: 0.7;
+    transition: opacity 0.1s linear;
+}
+
+.library-option img {
+    height: 1.25rem;
+}
+
+.library-option a {
+
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library-option:hover {
+    opacity: 1;
+}
+
+.plusBtn:hover {
+    opacity: 1;
+}
+
+.arrowBtn:hover {
+    opacity: 1;
+}
+
+.searchPanel {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 4px 0px 8px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.searchPanel i{
+    font-size: 1.1rem;
+    margin-left: 2px;
+}
+
+.search-icon-div{
+    opacity: 0.7;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-icon-div:hover{
+    opacity: 1;
+    background-color: #242424;
+    border-radius: 50%;
+}
+.search-icon-div:hover > i{
+    background-color: #242424;
+}
+
+.recents{
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.recents a{
+    font-size: 0.9rem;
+}
+
+.recents i{
+    margin-left: 5px;
+}
+
+.recents:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* For all artist list in the sidebar */
+
+.new-second-box {
+    height: 60.2%;
+    width: 352px;
+    margin: 0 6px;
+    padding: 0 8px;
+    overflow: auto;
+    border-radius: 0 0 0.6rem 0.6rem;
+}
+
+.each-artist {
+    height: 64px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.each-artist p {
+    margin: 0;
+}
+
+.light-artist {
+    color: #A7A7A7;
+    font-weight: 500;
+}
+
+.artist-photo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;       /* Crop the image to cover the container */
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.each-artist:hover {
+    background-color: #242424;
+}
+
+.each-artist:hover>div {
+    background-color: #242424;
+}
+
+.each-artist:hover .intro p {
+    background-color: #242424;
+}
+
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(109, 109, 109);
+}
+
+*::-webkit-scrollbar-track {
+    background-color: inherit;
+}
+
+
+.badgeBtn {
+    border: none;
+    background-color: #fff;
+    color: #000;
+    height: 32px;
+    width: fit-content;
+    font-size: 0.8rem;
+    border-radius: 110px !important;
+    padding: 0.25rem 1rem;
+    margin-top: 1.25rem;
+    font-weight: 700;
+}
+
+.badgeBtn:hover {
+    transform: scale(1.05);
+}
+
+.badgeBtn:focus {
+    outline: none;
+}
+
+/* Sidebar Styling Ends */
+
+.main-content {
+    background-color: #121212;
+    height: 90.2%;
+    flex: 1;
+    padding-bottom: 50px;
+    border-radius: 0.6rem;
+    overflow: auto;
+    position: relative;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.first-line {
+    height: 64px;
+    padding: 16px 24px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-line {
+    padding: 0 24px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.buttonGray {
+    background-color: rgba(36, 36, 36, 1);
+    color: #fff;
+}
+.buttonGray:hover{
+    background-color: rgba(114, 114, 114, 0.3);
+    transform: scale(1);
+}
+
+.diff-btn {
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.sticky-nav-option1 {
+    display: flex;
+    background-color: #121212;
+    /* margin-left: 1.875rem; */
+}
+
+.sticky-nav-option1 div {
+    height: 2rem;
+    width: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.sticky-nav-option1 img {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: inherit;
+}
+
+.sticky-nav-option2 .badgeBtn {
+    margin-top: 0;
+}
+
+.sticky-nav-option2 {
+    background-color: #121212;
+    height: 40px;
+    width: 350px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sticky-nav-option2 i {
+    font-size: 1.2rem;
+}
+
+.icon {
+    background-color: #000;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.downloadBtn {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.downloadBtn i {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+/* navbar of the main-content (styling) ends */
+
+/* main-content Album styling */
+.album-content {
+    padding: 0 24px;
+    background-color: #121212 !important;
+}
+
+#cards-heading:hover {
+    text-decoration: underline;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.card-box {
+    background-color: rgba(36, 36, 36, 0.4);
+    /* Previous opacity: 0.5 */
+    width: 200px;
+    height: 290px;
+    padding: 0.9rem;
+    border-radius: 0.7rem;
+    transition: all 0.3s linear;
+    /* margin-right: 1.05rem; */
+    /* margin-top: 0.3rem; */
+}
+
+.card-box:hover {
+    background-color: rgba(36, 36, 36, 1);
+}
+
+#last-card {
+    margin-right: 0;
+}
+
+
+.card-img {
+    /* width: 184px; */
+    width: 100%;
+    /* Ensure the image fills the container width */
+    height: 171px;
+    object-fit: cover;
+    /* Crop the image to cover the container */
+    overflow: hidden;
+
+    border-radius: 0.7rem;
+}
+
+/* .card-box:hover > .card-img{
+    box-shadow: 0.3px 2px 10px rgb(17, 17, 17);
+} 
+Uncomment if you want the box-shadow for images after hovering  */
+
+.card-para {
+    margin-top: 1rem;
+    margin-bottom: 4px;
+}
+
+.card-para,
+.card-info {
+    background-color: rgba(36, 36, 36, 0.1);
+}
+
+.card-para {
+    font-weight: 700;
+}
+
+.card-info {
+    color: #A7A7A7;
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+.make-circle {
+    border-radius: 50%;
+}
+
+.footer {
+    height: 380px;
+    padding-top: 40px;
+}
+
+.paddingbox{
+    height: 100%;
+    padding: 8px 32px 40px;
+}
+
+/* Footer part of the main-content */
+.part1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding-bottom: 32px;
+    border-bottom: 0.1px solid rgba(167, 167, 167, 0.5);
+}
+
+.part1 .column ul{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.column p{
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+.column ul a{
+    color: #A7A7A7;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.column ul a:hover{
+    color: white;
+    /* font-weight: 500; */
+}
+.social-media div i{
+    background-color: #292929;
+}
+.social-media div:hover{
+    background-color: #727272;
+}
+.social-media div:hover > i{
+    background-color: #727272;
+}
+.social-media div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.1rem;
+}
+
+.social-media{
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 5/ span 1;
+}
+
+.part2{
+    width: 100%;
+    height: 60px;
+    padding-top: 2.2rem;
+    display: flex;
+}
+
+.part2 .elem{
+    font-size: 0.9rem;
+    color: #A7A7A7;
+    margin-right: 1rem;
+}
+
+.part2 div a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+#last-div {
+    margin-left: auto;
+}
+
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    padding: 0 8px;
+}
+
+.current-album{     /* First div in the music-player part */
+    width: 30%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+.current-album-image{
+    height: 56px;
+    width: 56px;
+    margin-right: 1rem;
+    background-color: #000;
+}
+.current-album-image img{
+    object-fit: cover;       /* Crop the image to cover the container */
+    height: 56px;
+    width: 56px;
+}
+
+.makeFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 8px;
+    /* line-height: 1.2; */
+    background-color: transparent;
+}
+
+.bigFont{
+    font-size: 14px;
+    color: #fff;  
+}
+
+.smallFont{
+    font-size: 12px;
+    text-decoration: none;
+    color: #A7A7A7;
+}
+.smallFont a{
+    color: #A7A7A7;
+}
+
+.makeFlex .bigFont:hover{
+    text-decoration: underline;
+}
+.makeFlex a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.current-album-icon{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.current-album-icon i{
+    color: #A7A7A7;
+}
+
+.current-album-icon i:hover{
+    color: #fff;
+}
+
+.player{           /* Second div in the music-player part */
+    background-color: #000;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player-controls{
+    background-color: #000;
+    padding-bottom: 8px;
+    padding-top: 7px;
+    padding-left: 20px;
+}
+.player-controls .player-control-icon{
+    opacity: 0.7;
+    height: 0.9rem;
+    margin-right: 1.5rem;
+}
+
+#main-icon{
+    height: 2rem;
+    opacity: 1;
+}
+#main-icon:hover{
+    transform: scale(1.1);
+}
+.player-control-icon:hover{
+    opacity: 1;
+}  
+
+input[type="range"] {
+    width: 450px; /* Set width */
+    height: 4px; /* Set height */
+}
+
+.playback-bar{
+    background-color: #000;
+    margin-bottom: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#progress-bar{          /* This is range typed input element */
+    appearance: none;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+
+#progress-bar::-webkit-slider-runnable-track{
+    background-color: #666; 
+    border-radius: 100px;
+    height: 0.25rem;
+}
+
+#progress-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 0.8rem;                 /* Width of thumb */
+    height: 0.8rem;                /* Height of thumb */
+    border-radius: 50%;            /* Make thumb round */
+    background-color: #ddd;      /* Color of thumb */
+    cursor: pointer;               /* Change cursor to pointer */
+    margin-top: -4px;
+}
+
+.playback-bar span{
+    color: #A7A7A7;
+    font-size: 0.75rem;
+}
+
+
+.controls{      /* Third div in the music-player part */
+    width: 30%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
